@@ -1,0 +1,81 @@
+<div class="container">
+  <h1> RPG COMPANION </h1>
+  <p> Kill dragons one click at a time!</p>
+
+  <div id = "animation" >
+
+    <img src= "http://www.animated-gifs.eu/leisure-games-d20/0016.gif" alt="d6" height="90" width="90">
+
+  </div>
+
+  
+
+
+
+
+
+<FORM METHOD="POST" ACTION='/dies'>
+<TABLE BORDER="1">
+  <col width="150px">
+  <col width="150px">
+  <col width="350px">
+ 
+  <tr>
+    <th align="center" > Type of die </th>
+    <th align="center" > Pick your die</th>
+    <!-- <th align="center" > Number of dice</th> -->
+    <th align="center" > Result!</th>
+  </tr>
+  <TR>
+    
+    <TD align = "center" ><img src= "http://940ee6dce6677fa01d25-0f55c9129972ac85d6b1f4e703468e6b.r99.cf2.rackcdn.com/products/pictures/935629.jpg" alt="d6" height="42" width="42"> 
+    </TD>
+    <TD>
+      <input id="die_form_1" type="radio" name="die" value="die_6">Die 6
+    </TD>
+     <!-- <TD>
+      <input type="text" name="number of dice" placeholder="How many?" >
+    </TD>
+ -->
+      <TD id = "result" align="center" rowspan = "4">
+
+        <%=@result%>
+      
+      </TD>
+    
+  </TR>
+  <TR>
+   
+    <TD align = "center" ><img src= "http://t0.gstatic.com/images?q=tbn:ANd9GcROqeUPEixh3zymJkkQZvheLeDLxPvamB5iTMAlDxBmXq0Fus7R" alt="die_10" height="42" width="42"></TD>
+    <TD> <input id="die_form_2" type="radio" name="die" value="die_10">Die 10</TD>
+    <!-- <TD>
+      <input type="text" name="number of dice" placeholder="How many?">
+    </TD> -->
+  </TR>
+  <TR>
+    
+    <TD align = "center"><img src="http://www.gamestation.net/images/3101-0021.JPG" alt="d20" height="42" width="42"></TD>
+    <TD><input id="die_form_3" type="radio" name="die" value="die_20"> Die 20</TD>
+    <!-- <TD>
+      <input type="text" name="number of dice" placeholder="How many?">
+    </TD> -->
+  </TR>
+
+   <TR>
+    
+    <TD align = "center"><img src="http://wondertrail.com/images/detailed/23/D10-Dice-Single-Category.jpg" alt="d100" height="42" width="60"></TD>
+    <TD><input id="die_form_4" type="radio" name="die" value="die_100" > Die 100</TD>
+    <!-- <TD>
+      <input type="text" name="number_of_dice" placeholder="How many?">
+    </TD> -->
+  </TR>
+</TABLE>
+<P><INPUT id="submit" TYPE="SUBMIT" VALUE="Roll!!!" ></P>
+</FORM>
+
+<div id = "animation_roll" style="display: none">
+
+
+<img src= "http://www.animated-gifs.eu/leisure-games-d20/0007.gif" alt="d6" height="90" width="90">
+
+</div>
